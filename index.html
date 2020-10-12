@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <h1 id="tit"> Hola Hola Coca Cola </h1>
+     <script src='estructuras.js'></script>
+
+     <p>Formas de Interaccion JS con HTML</p>
+     <script>
+
+
+        var nombre = window.prompt ('Cual es tu nombre?');
+        //para agg valor predeterminado al campo seria
+        var apellidos = window.prompt ('Cual es tu apellido?', 'Ingrese su apellido aqui');
+
+        if ( nombre == "" && apellidos == "") {
+            alert ('Usted es anonimo');
+        } else {
+            alert("Usted es "+ nombre);
+        }
+
+
+        var numero1 = 5;
+        var numero2 = 15;
+
+        //numero1++;
+        alert( numero1 );
+
+        // var resultado = numero1 + numero2;
+
+        //   alert ( resultado );
+
+        numero1+= 3; //numero1 + 3= 5
+        alert ( numero1 );
+        numero1-= 1; //numero1 -1 = 4
+        numero1*= 2; //numero1 *2 = 10
+        numero1/= 5; //numero1 /5= 1
+        numero1%= 4; //numero1 % 4= 1
+
+        
+        
+        //ventana de confirmacion boolean
+        var confirmacion = window.confirm('usted desea aceptar o cancelar?')
+
+        //imprimir en el body
+        document.write ('Mi nombre es ' + nombre);
+        //imprimir en la consola
+        console.log ('Su nombre es ' + nombre);
+        
+        /*formas de interaccion con p
+        var parrafo = document.querySelector("p");
+       alert ( parrafo.innerHTML ); //acceder al contenido
+        //modificar el texto dentro de js
+        parrafo.innerHTML = "Este es un texto generado en JS",
+      alert ( parrafo.innerHTML );
+        //get element ya es descartado por queryselector
+        var parrafo2 = document.getElementsByTagName("p"); 
+        */
+        
+  
+
+    </script>
+
+
+
+
+</body>
+</html>
